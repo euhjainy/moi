@@ -282,21 +282,20 @@ nav.menu {
 @media (max-width: 850px) {
 
   .section-center  {
-    display: none;
+    display: none!important;
   }
   .buttons{
-    display: none;
+    display: none!important;
   }
 
   .section-right{
-    display: none;
+    display: none!important;
   }
 
 
  #phone{
-  display:block;
+  display:block!important;
 }
-
 
  
   .section-left {
@@ -374,19 +373,19 @@ nav.menu {
 
 
   .section-center  {
-    display: none;
+    display: none!important;
   }
   .buttons{
-    display: none;
+    display: none!important;
   }
 
   .section-right{
-    display: none;
+    display: none!important;
   }
 
 
  #phone{
-  display:block;
+  display:block!important;
 }
 
 
@@ -446,5 +445,5 @@ nav.menu {
      
     }
 
-    
+
 }
