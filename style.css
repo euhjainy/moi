@@ -1,0 +1,362 @@
+@font-face {
+  font-family: police1;
+  src: url("fonts/Helvetica.ttf")
+}
+
+
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(83, 83, 83);
+  
+}
+
+.section {
+  height: auto;
+  overflow-y: auto; 
+  transition: flex 0.2s ease; 
+}
+
+
+.section-left, .section-right {
+  flex: 0.4; 
+  padding-top: 12px; 
+}
+
+.section-left {
+ 
+  font-family: police1;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.section-left p {
+  font-size: 1vw;
+  width: 96%;
+  font-family: police1;
+}
+
+.section-right{
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  font-family: police1;
+}
+.section-right p {
+  font-size: 1vw;
+  width: 96%;
+  font-family: police1;
+}
+
+
+.section-center {
+  flex: 0.2; 
+  display: flex;
+  flex-direction: column;
+  background-color:  rgb(238, 238, 238);
+  position: relative; 
+  overflow: hidden; 
+}
+
+.buttons {
+  display: flex; 
+  color:rgb(255, 255, 255);
+  gap: 10px; 
+  width: 100%; 
+  position: absolute; 
+  bottom: 0; 
+}
+
+.buttons button {
+  color:rgb(44, 44, 44);
+  padding: 5px ;
+  font-size: 1.3vw; 
+  cursor: pointer; 
+  flex: 1; 
+  white-space: nowrap; 
+}
+
+.buttons button:hover{
+  color:rgb(0, 0, 0);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  
+}
+
+.contact{
+   display: flex; 
+   color:rgb(255, 255, 255);
+   gap: 10px; 
+   width: 100%; 
+   position: absolute; 
+   top: 0;  
+}
+.contact p{
+  text-align: center;
+  color:rgb(44, 44, 44);
+  font-size: 1.3vw; 
+  cursor: pointer; 
+  flex: 1; 
+  white-space: nowrap; 
+}
+.contact p:hover{
+  color:rgb(0, 0, 0);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+
+video{
+  width: 100%;
+}
+
+
+
+.container {
+  display: flex; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2{
+      
+  font-size: 1.2vw;
+  font-family: police1;
+  color: rgb(83, 83, 83);
+}
+.info{
+  color: rgb(173, 173, 173);
+  font-size: 1vw;
+  text-align: right;
+}
+
+
+
+
+
+
+
+.bloc2 a{
+text-decoration: none;
+color: rgb(173, 173, 173);
+font-style: italic;
+
+}
+
+.bloc2 a:hover{
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-style: italic;
+  
+  }
+
+.section-top {
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: auto;
+  background-color: transparent; 
+  z-index: 1000; 
+  display: flex;
+  align-items: left; 
+  justify-content: left; 
+ 
+}
+
+
+.section-top p {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 1.4vw;
+ 
+}
+
+
+
+
+
+
+
+
+.menu img{
+  width: 15px;
+  height: 15px;
+  margin-left: 0.4vw;
+  margin-top: 0.1vw;
+}
+  
+nav.menu {
+      position: sticky;
+      top: 0;
+      margin-left: 1vw;
+      display: inline-block;
+      height: 10px;
+      font-style: italic;  
+}
+
+
+ #phone{
+   display: none;
+ }
+ 
+  
+
+  
+  
+
+
+ .overlay2 {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 40.5%;
+  justify-content: center;
+  align-items: center;
+  width: 19%;
+  height: 90vh; 
+  z-index: 1000; 
+  color: rgb(83, 83, 83);
+  background-color:  rgb(238, 238, 238);
+}
+.overlay-content2 {
+  padding-left: 10px;
+  position: relative;
+  text-align: left;
+}
+.overlay-content2 a{
+  font-size:  1.1vw;
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+}
+
+.overlay-content2 a:hover{
+  font-size:  1.1vw;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  font-style: italic;
+}
+.overlay-content2 p{
+  font-size: 1.1vw;
+  color: rgb(83, 83, 83);
+}
+
+.close2 {
+  position: absolute;
+  margin-top: 5vh;
+  width: 20vw;
+  height:90vh;
+  font-size: 2vw;
+  color: rgba(155, 155, 155,0);
+
+  /* background-color: blue; */
+ 
+}
+
+
+  
+
+
+  
+
+
+@media (max-width: 850px) {
+
+  .section-center  {
+    display: none;
+  }
+  .buttons{
+    display: none;
+  }
+
+  .section-right{
+    display: none;
+  }
+
+
+ #phone{
+  display:block;
+}
+
+
+ 
+  .section-left {
+    /* margin-right: 5px; */
+    margin: 0;
+    padding: 0;
+    display: block; 
+    flex: none; 
+    width: 100%; 
+    height: auto; 
+    margin-top: 30px;
+  }
+
+
+  .your-class {
+    width: 100%;
+  }
+
+  
+  .your-class img, 
+  .your-class video {
+    width: 100%;
+    height: auto; 
+  }
+
+  
+  .section {
+    display: block; 
+    width: 100%; 
+  }
+
+  .section-left p {
+    width: 100%;
+    font-family: police1;
+    font-size: 2.5vw;
+  }
+  .section-top p {
+  
+    font-size: 3.5vw;
+  }
+ 
+  h2{
+    font-size: 3vw;
+    width: 80%;
+  }
+
+   .explication {
+    display:block; 
+    text-align: justify;
+    font-size: 2.1vw;
+  } 
+
+  body {
+    margin: 15px;
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (orientation: portrait) {  
+} */
