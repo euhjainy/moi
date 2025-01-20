@@ -74,17 +74,23 @@ body {
   color:rgb(255, 255, 255);
   gap: 10px; 
   width: 100%; 
+  
   position: absolute; 
-  bottom: 0; 
+  top: 1px; 
+
 }
 
 .buttons button {
   color:rgb(44, 44, 44);
   padding: 5px ;
   font-size: 1.3vw; 
+  margin-top: 15px;
+  height: 15%;
   cursor: pointer; 
   flex: 1; 
   white-space: nowrap; 
+
+  
 }
 
 .buttons button:hover{
@@ -100,7 +106,7 @@ body {
    gap: 10px; 
    width: 100%; 
    position: absolute; 
-   top: 0;  
+   bottom: 0;  
 }
 .contact p{
   text-align: center;
@@ -257,9 +263,10 @@ nav.menu {
   position: absolute;
   margin-top: 5vh;
   width: 20vw;
-  height:90vh;
+  height:95vh;
   font-size: 2vw;
   color: rgba(155, 155, 155,0);
+
 
   /* background-color: blue; */
  
@@ -363,5 +370,81 @@ nav.menu {
 
 
 
-/* @media screen and (orientation: portrait) {  
-} */
+@media screen and (orientation: portrait) {  
+
+
+  .section-center  {
+    display: none;
+  }
+  .buttons{
+    display: none;
+  }
+
+  .section-right{
+    display: none;
+  }
+
+
+ #phone{
+  display:block;
+}
+
+
+ 
+  .section-left {
+    /* margin-right: 5px; */
+    margin: 0;
+    padding: 0;
+    display: block; 
+    flex: none; 
+    width: 100%; 
+    height: auto; 
+    margin-top: 30px;
+  }
+
+
+  .your-class {
+    width: 100%;
+  }
+
+  
+  .your-class img, 
+  .your-class video {
+    width: 100%;
+    height: auto; 
+  }
+
+  
+  .section {
+    display: block; 
+    width: 100%; 
+  }
+
+  .section-left p {
+    width: 100%;
+    font-family: police1;
+    font-size: 2.5vw;
+  }
+  .section-top p {
+  
+    font-size: 3.5vw;
+  }
+ 
+  h2{
+    font-size: 3vw;
+    width: 80%;
+  }
+
+   .explication {
+    display:block; 
+    text-align: justify;
+    font-size: 2.1vw;
+  } 
+
+  body {
+    margin: 15px;
+     
+    }
+
+    
+}
