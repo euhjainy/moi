@@ -19,9 +19,14 @@ body {
 .section {
   height: auto;
   overflow-y: auto; 
-  transition: flex 0.2s ease; 
+  /* transition: flex 0.2s ease;  */
 }
 
+.section-left,
+.section-right,
+.section-center {
+  transition: flex 0.5s ease; /* Transition sur les changements de flex */
+}
 
 .section-left, .section-right {
   flex: 0.4; 
