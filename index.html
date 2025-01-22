@@ -4,9 +4,11 @@
   <title>Eugénie Marissal</title>
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
   <link rel="icon" href="medias/lapin.png">
 </head>
 
@@ -17,14 +19,10 @@
 
   <section class="section-top">
     <p>eugénie marissal</p>
-   
-
   </section>
 
  
   <div class="section section-left">
-
-   
     <div class="bloc2">
     <div class="your-class">
       <div><img  src="medias/durckbar_site/druckbar.jpg"></div>   
@@ -35,11 +33,9 @@
       <div><img  src="medias/durckbar_site/druckbar_photo.jpg"></div> 
       <div><img  src="medias/durckbar_site/druckbar4.jpg"></div> 
       <div><img  src="medias/durckbar_site/druckbar5.jpg"></div> 
-    
     </div>
         
-        <h2>Druckbar Dessau – Calendar</h2>
-        
+        <p id="h2">Druckbar Dessau – Calendar<p>        
         <p class="explication">
           ↳ Contribution to the <a target="_blank" href="https://www.instagram.com/druckbardessau/">Druckbar Dessau</a> calendar [DE]  <br>
           While the students are away, the teachers will play! Back in the 1920's the school of bauhaus put on colorful costume parties which eventually led to the creation of the Triadic Ballet by Oskar Schlemmer. Playing with symmetry and geometry the body is reduced to its simplest construction and might even be fused with the background. 
@@ -47,21 +43,18 @@
         </p>
         <p class="info">
           october 2024 – graphisme · risography
-         
-        
+                 
   </div>
   <div class="bloc2">
-    
       <div class="your-class">
         <div><img  src="medias/alterpt2/good_size17.jpg"></div> 
         <div><img  src="medias/alterpt2/good_size18.jpg"></div> 
         <div><img  src="medias/alterpt2/good_size19.jpg"></div> 
         <div><img  src="medias/alterpt2/good_size20.jpg"></div> 
-        <div><img  src="medias/alterpt2/alter_mater_3D.gif"></div> 
-      
+        <div><img  src="medias/alterpt2/alter_mater_3D.gif"></div>      
       </div>
           
-          <h2>Alter Mater – Mater Alter</h2>
+          <p id="h2">Alter Mater – Mater Alter</p>
           
           <p class="explication">
             ↳ Exhibition-performance by the “Opera” creative research workshop of ESAC - Cambrai Around the Stabat Mater presented on April 12 and 13, 2024 at the Opéra de Lille [FR] by Maëlle Dequiedt and Simon-Pierre Bestion, the students present Alter Mater / Mater Alter in the spaces of the Opéra - rotunda and small salons adjoining the central staircase. Conceived with the artists of La Phenomena, this exhibition extends the reflection, questioning through installations, videos and performances, the place of the sacred, filiation and mourning in our contemporary world.
@@ -86,7 +79,7 @@
         <div> <img src="medias/jpo/good_size11.jpg"></div> 
       </div>
    
-      <h2>Open Day at ESAC – Cambrai</h2>
+      <p id="h2">Open Day at ESAC – Cambrai</p>
       
       <p class="explication">
         ↳ The visual communication of the open days of the École Supérieure d'Art de Cambrai [FR] 2024 is conveyed by Ylan Baptiste, Valentin Lemaire and Eugénie Marissal.
@@ -117,7 +110,7 @@
    
     </div>
         
-        <h2>My Dear Knight</h2>
+        <p id="h2">My Dear Knight</p>
         
         <p class="explication">
           ↳ Transposition of a pattern using various knitting techniques: lace effect, embroidery stitch, openwork stitch. Research workbook printed by ploter
@@ -142,7 +135,7 @@
       <div><img src="medias/vari/l.jpg"></div>
     </div>
         
-        <h2>KnitHz!</h2>
+        <p id="h2">KnitHz!</p>
         
         <p class="explication">
           ↳ In the 90s, the Warp6 label used artificial intelligence to create an album for the first time. Through the process of machine learning, a code detects the hertz frequencies of the music and transcribes them into shapes. These shapes are then transferred and knitted onto a hacked machine. This project raises issues around the use of machine learning in artistic creation and the relationship between machine and craft. This combination of technology and craft rethinks the relationship between machine and artist, and reintroduces a human dimension into the creative process.
@@ -166,18 +159,17 @@
 
     <div class="contact">    
       <p id="contactBtn" >contact</p>            
-      <p id="aboutMeBtn" >more</p>
+      <p id="aboutMeBtn" >about me</p>
      
     </div>
 
     <div class="buttons">
       <button onclick="expandLeft()">design</button>
-    
       <button onclick="resetSections()"> x </button>
       <button onclick="expandRight()">knitting</button>
     </div>
-
   </div>
+
   <div id="contactOverlay" class="overlay2">
     <div class="overlay-content2">
         <span class="close2" id="closeContact">&times;</span>
@@ -188,19 +180,15 @@
     <div id="aboutMeOverlay" class="overlay2">
       <div class="overlay-content2">
           <span class="close2" id="closeAboutMe">&times;</span>
-
           <p> <span>2024-2025 - Knitting Design <br>
             Executive Master - ARBA <br>Bruxelles </span><br> 
-  
            <p> <span>2021-2024 - DNA (Licence) <br>
             École Supérieure d'art <br> Cambrai </span><br> <br>
-           
             <span>
             2023 - Erasmus <br> 
             l'ESA le75 – Bruxelles</span>
             <br> 
           </p>
-         
           <p>
             <span> Avril - 2023 <br>
               Machine à tricoter hackée <br>
@@ -223,22 +211,22 @@ const aboutMeBtn = document.getElementById('aboutMeBtn');
 const closeContact = document.getElementById('closeContact');
 const closeAboutMe = document.getElementById('closeAboutMe');
 
-// Afficher l'overlay de contact
+
 contactBtn.addEventListener('click', () => {
   contactOverlay.style.display = 'block';
 });
 
-// Afficher l'overlay "About Me"
+
 aboutMeBtn.addEventListener('click', () => {
   aboutMeOverlay.style.display = 'block';
 });
 
-// Fermer l'overlay de contact
+
 closeContact.addEventListener('click', () => {
   contactOverlay.style.display = 'none';
 });
 
-// Fermer l'overlay "About Me"
+
 closeAboutMe.addEventListener('click', () => {
   aboutMeOverlay.style.display = 'none';
 });
@@ -265,7 +253,7 @@ closeAboutMe.addEventListener('click', () => {
      
       </div>
           
-          <h2>My Dear Knight</h2>
+          <p id="h2">My Dear Knight</p>
           
           <p class="explication">
             ↳ Transposition of a pattern using various knitting techniques: lace effect, embroidery stitch, openwork stitch. Research workbook printed by ploter
@@ -290,7 +278,7 @@ closeAboutMe.addEventListener('click', () => {
         <div><img src="medias/vari/l.jpg"></div>
       </div>
           
-          <h2>KnitHz!</h2>
+          <p id="h2">KnitHz!</p>
           
           <p class="explication">
             ↳ In the 90s, the Warp6 label used artificial intelligence to create an album for the first time. Through the process of machine learning, a code detects the hertz frequencies of the music and transcribes them into shapes. These shapes are then transferred and knitted onto a hacked machine. This project raises issues around the use of machine learning in artistic creation and the relationship between machine and craft. This combination of technology and craft rethinks the relationship between machine and artist, and reintroduces a human dimension into the creative process.
